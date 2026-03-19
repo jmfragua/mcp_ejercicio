@@ -1,0 +1,8 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python server_http.py"
+restartPolicyType = "always"
+healthcheckPath = "/sse"
+healthcheckTimeout = 30
